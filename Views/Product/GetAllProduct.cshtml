@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Весь товар";
+}
+@model IEnumerable<Store.Models.ProductModel>
+
+<div class="container">
+    <h1>Весь товар</h1>
+    <div class="row">
+
+        @foreach (var product in Model)
+        {
+            <div class="col-md-3">
+                <partial name="_productPresentation" model="@product" />
+            </div>
+        }
+    </div>
+</div>

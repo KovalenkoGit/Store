@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Додати новий товар";
+}
+@model ProductModel
+
+<div class="container">
+    <h3 class="display-4">Додати товар</h3>
+    @if (ViewBag.IsSuccess == true)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Додано. </strong> Ви успішно додали товар <br />
+            Детальніше <a asp-controller="Product" asp-action="GetProduct" asp-route-id="@ViewBag.ProductId"> тут</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <form method="post" enctype="multipart/form-data" asp-action="AddNewProduct" asp-controller="Product">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control"></input>
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CategoryId"></label>
+            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Category">
+                <option value="">Виберіть категорію</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CoverPhoto" class="control-label"></label>
+            <div class="input-group mb-3">
+                <input asp-for="CoverPhoto" class="form-control" id="inputGroupFile02" accept=".jpg, .jpeg, .png">
+                <label class="input-group-text" for="inputGroupFile02">Додати</label>
+            </div>
+            <span asp-validation-for="CoverPhoto" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="GalleryFiles" class="control-label"></label>
+            <div class="input-group mb-3">
+                <input asp-for="GalleryFiles" class="form-control" id="inputGroupFile02" accept=".jpg, .jpeg, .png">
+                <label class="input-group-text" for="inputGroupFile02">Додати</label>
+            </div>
+            <span asp-validation-for="GalleryFiles" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Додати" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

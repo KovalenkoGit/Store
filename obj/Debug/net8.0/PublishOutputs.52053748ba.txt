@@ -1,0 +1,8 @@
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\Store.exe
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\appsettings.json
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\libman.json
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\Store.dll
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\Store.deps.json
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\Store.runtimeconfig.json
+D:\GitHub\Store\obj\Debug\net8.0\PubTmp\Out\Store.pdb
