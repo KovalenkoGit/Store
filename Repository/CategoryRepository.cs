@@ -21,6 +21,6 @@ namespace Store.Repository
                 Description = x.Description,
                 Name = x.Name
             }).ToListAsync();
-        }
+        }       
     }
 }

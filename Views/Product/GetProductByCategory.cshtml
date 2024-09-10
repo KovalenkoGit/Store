@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Товар";
+}
+@model IEnumerable<Store.Models.ProductModel>
+
+<div class="container">
+    @if (Model != null && Model.Any())
+    {
+        <!-- Виводимо назву категорії, беручи її з першого продукту -->
+        <h1>@Model.First().Category</h1>
+    }
+    else
+    {
+        <!-- Виводимо повідомлення, якщо немає продуктів -->
+        <h1>Категорія не знайдена</h1>
+    }
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-3">
+                <partial name="_productPresentation" model="@product" />
+            </div>
+        }
+    </div>
+</div>

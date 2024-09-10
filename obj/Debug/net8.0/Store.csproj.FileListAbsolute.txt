@@ -540,3 +540,4 @@ D:\GitHub\Store\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensio
 D:\GitHub\Store\obj\Debug\net8.0\Store.csproj.AssemblyReference.cache
 D:\GitHub\Store\obj\Debug\net8.0\Store.MvcApplicationPartsAssemblyInfo.cs
 D:\GitHub\Store\obj\Debug\net8.0\Store.csproj.Up2Date
+D:\GitHub\Store\obj\Debug\net8.0\Store.sourcelink.json

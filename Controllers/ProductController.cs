@@ -34,11 +34,17 @@ namespace Store.Controllers
             var data = await _productRepository.GetProductById(id);
 			return View(data);
 		}
+        [Route("~/category")]
+        public async Task<ViewResult> GetProductByCategory(Guid categoryId)
+        {
+            var data = await _productRepository.GetProductByCategoryId(categoryId);
+            return View(data);
+        }
         public List<ProductModel> SearchProduct(string name)
         {
             return _productRepository.SearchProduct(name);
         }
-       // [Authorize]
+        //[Authorize]
         public async Task<ViewResult> AddNewProduct(bool isSuccess = false, Guid? productId = null)
         {
             var model = new ProductModel();
@@ -91,5 +97,6 @@ namespace Store.Controllers
             await file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
             return "/" + folderPath;
         }
+
     }
 }

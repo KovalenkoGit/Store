@@ -16,7 +16,7 @@ namespace Store.Repository
         }
         public async Task<Guid> AddNewProduct(ProductModel product)
         {
-            var newBook = new Product()
+            var newProduct = new Product()
             {
                 Name = product.Name,
                 Description = product.Description,
@@ -27,22 +27,21 @@ namespace Store.Repository
                 CoverImageUrl = product.CoverImageUrl
             };
 
-            newBook.ProductImages = new List<ProductImage>();
+            newProduct.ProductImages = new List<ProductImage>();
             // Додаємо фото до книги
             foreach (var image in product.Gallery)
             {
-                newBook.ProductImages.Add(new ProductImage()
+                newProduct.ProductImages.Add(new ProductImage()
                 {
                     Name = image.Name,
                     ImageURL = image.ImageURL
                 });
             }
 
-            await _context.Product.AddAsync(newBook);
+            await _context.Product.AddAsync(newProduct);
             await _context.SaveChangesAsync();
-            return newBook.ProductId;
+            return newProduct.ProductId;
         }
-
         public async Task<List<ProductModel>> GetAllProduct()
         {
             return await _context.Product
@@ -59,7 +58,6 @@ namespace Store.Repository
                       CoverImageUrl = product.CoverImageUrl
                   }).ToListAsync();
         }
-
         public async Task<List<ProductModel>> GetTopProduct(int count)
         {
             return await _context.Product
@@ -76,9 +74,10 @@ namespace Store.Repository
                       CoverImageUrl = product.CoverImageUrl
                   }).OrderBy(x => Guid.NewGuid()).Take(count).ToListAsync() ?? new List<ProductModel>();
         }
-        public async Task<ProductModel> GetProductById(Guid id)
+        public async Task<ProductModel?> GetProductById(Guid productId)
         {
-            return await _context.Product.Where(x => x.ProductId == id)
+            return await _context.Product
+                .Where(x => x.ProductId == productId)
                 .Select(product => new ProductModel()
                 {
                     ProductId = product.ProductId,
@@ -98,6 +97,24 @@ namespace Store.Repository
                     }).ToList() : new List<GalleryModel>(),
                 }).FirstOrDefaultAsync();
         }
+        public async Task<List<ProductModel>> GetProductByCategoryId(Guid categoryId)
+        {
+            return await _context.Product
+                .Where(x => x.CategoryId == categoryId)
+                .Select(product => new ProductModel()
+                {
+                    ProductId = product.ProductId,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    CategoryId = product.CategoryId,
+                    Category = product.Category.Name,
+                    DateAdded = product.DateAdded,
+                    DateUpdated = product.DateUpdated,
+                    CoverImageUrl = product.CoverImageUrl
+                }).ToListAsync();
+        }
+        
         public List<ProductModel> SearchProduct(string name)
         {
             return null;

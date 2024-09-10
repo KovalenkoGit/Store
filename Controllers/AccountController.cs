@@ -45,5 +45,26 @@ namespace Store.Controllers
         {
             return View();
         }
+        [Route("login")]
+        [HttpPost]
+        public async Task<IActionResult> LogIn(LoginModel loginModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _accountRepository.PasswordSignInAsync(loginModel);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError("", "Невірний email або пароль");
+            }
+            return View();
+        }
+        [Route("logout")]
+        public async Task<IActionResult> LogOut()
+        {
+            await _accountRepository.SignOutAsync();
+             return RedirectToAction("Index", "Home");
+        }
     }
 }
