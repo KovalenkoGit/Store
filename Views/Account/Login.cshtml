@@ -44,8 +44,13 @@
                             <input class="form-check-input" asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
                         </label>
                     </div>
+                     <br />
                     <div class="form-group">
                         <input type="submit" value="Увійти" class="btn btn-primary" />
+                    </div>
+                     <br />
+                    <div>
+                         <a asp-controller="Home" asp-action="Index">На головну</a>
                     </div>
                 </form>
             </div>
@@ -54,9 +59,7 @@
             </div>
         </div>
 
-        <div>
-            <a asp-action="Index">Back to List</a>
-    </div>
+
 <div>
 </body>
 </html>

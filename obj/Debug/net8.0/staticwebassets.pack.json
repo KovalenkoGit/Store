@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\carousel_3.jpg"
     },
     {
+      "Id": "D:\\GitHub\\Store\\wwwroot\\images\\changepassword.png",
+      "PackagePath": "staticwebassets\\images\\changepassword.png"
+    },
+    {
       "Id": "D:\\GitHub\\Store\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },

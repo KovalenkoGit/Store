@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8lu+vO9mzoQZa5VwDa+YOZi7JAesgnuODLtUGwnir5c=",
+  "Hash": "7bVAbS2kGNOG811lyUNeVDrKX+WgXkNOTEiHPbUjWI4=",
   "Source": "Store",
   "BasePath": "_content/Store",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel_3.jpg"
+    },
+    {
+      "Identity": "D:\\GitHub\\Store\\wwwroot\\images\\changepassword.png",
+      "SourceId": "Store",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHub\\Store\\wwwroot\\",
+      "BasePath": "_content/Store",
+      "RelativePath": "images/changepassword.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\changepassword.png"
     },
     {
       "Identity": "D:\\GitHub\\Store\\wwwroot\\images\\logo.png",

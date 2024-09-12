@@ -63,7 +63,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+//Обовязково правильной порядок UseAuthentication та UseAuthorization
 app.UseAuthentication();
 app.UseAuthorization();
 

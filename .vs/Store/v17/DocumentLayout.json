@@ -3,56 +3,40 @@
   "WorkspaceRootPath": "D:\\GitHub\\Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\shared\\_logininfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\shared\\_logininfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\helpers\\applicationuserclaimsprincipialfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:helpers\\applicationuserclaimsprincipialfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\product\\getproductbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\product\\getproductbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\product\\searchproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\product\\searchproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\shared\\components\\getcategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\shared\\components\\getcategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +58,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:34:06.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Repository\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IAccountRepository.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Repository\\IAccountRepository.cs",
+              "RelativeToolTip": "Repository\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:15:29.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Repository\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\AccountRepository.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Repository\\AccountRepository.cs",
+              "RelativeToolTip": "Repository\\AccountRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwC4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:02:49.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "D:\\GitHub\\Store\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T20:45:16.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAywFwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:42:08.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangePasswordModel.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\ChangePasswordModel.cs",
+              "RelativeDocumentMoniker": "Models\\ChangePasswordModel.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Models\\ChangePasswordModel.cs",
+              "RelativeToolTip": "Models\\ChangePasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:37:16.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\GitHub\\Store\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\GitHub\\Store\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T20:10:57.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\GitHub\\Store\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "Service\\UserService.cs",
@@ -95,148 +157,19 @@
               "RelativeToolTip": "Service\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:00:05.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T20:00:05.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Store",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Store.csproj",
-              "RelativeDocumentMoniker": "Store.csproj",
-              "ToolTip": "D:\\GitHub\\Store\\Store.csproj",
-              "RelativeToolTip": "Store.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-12T19:59:23.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\GitHub\\Store\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\GitHub\\Store\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-11T19:55:40.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "_loginInfo.cshtml",
               "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Shared\\_loginInfo.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_loginInfo.cshtml",
               "ToolTip": "D:\\GitHub\\Store\\Views\\Shared\\_loginInfo.cshtml",
               "RelativeToolTip": "Views\\Shared\\_loginInfo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-11T19:36:46.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T19:33:25.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationUserClaimsPrincipialFactory.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Helpers\\ApplicationUserClaimsPrincipialFactory.cs",
-              "RelativeDocumentMoniker": "Helpers\\ApplicationUserClaimsPrincipialFactory.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Helpers\\ApplicationUserClaimsPrincipialFactory.cs",
-              "RelativeToolTip": "Helpers\\ApplicationUserClaimsPrincipialFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T19:15:17.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SearchProduct.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Product\\SearchProduct.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\SearchProduct.cshtml",
-              "ToolTip": "D:\\GitHub\\Store\\Views\\Product\\SearchProduct.cshtml",
-              "RelativeToolTip": "Views\\Product\\SearchProduct.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-10T20:18:05.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAIA+wDkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T06:46:40.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Service\\IUserService.cs",
-              "RelativeDocumentMoniker": "Service\\IUserService.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Service\\IUserService.cs",
-              "RelativeToolTip": "Service\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:22:32.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Shared\\Components\\GetCategory\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\GetCategory\\Default.cshtml",
-              "ToolTip": "D:\\GitHub\\Store\\Views\\Shared\\Components\\GetCategory\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\GetCategory\\Default.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-10T07:21:57.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_header.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Shared\\_header.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_header.cshtml",
-              "ToolTip": "D:\\GitHub\\Store\\Views\\Shared\\_header.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_header.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-10T07:18:29.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetProductByCategory.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Product\\GetProductByCategory.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\GetProductByCategory.cshtml",
-              "ToolTip": "D:\\GitHub\\Store\\Views\\Product\\GetProductByCategory.cshtml",
-              "RelativeToolTip": "Views\\Product\\GetProductByCategory.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-10T05:57:31.68Z",
               "EditorCaption": ""
             }
           ]
