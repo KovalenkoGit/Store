@@ -114,10 +114,36 @@ namespace Store.Repository
                     CoverImageUrl = product.CoverImageUrl
                 }).ToListAsync();
         }
-        
-        public List<ProductModel> SearchProduct(string name)
+        public async Task<List<ProductModel>> SearchProducts(string searchTerm)
         {
-            return null;
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                // Якщо пошуковий запит порожній, повертаємо всі товари
+                return await _context.Product
+                    .Select(product => new ProductModel
+                    {
+                        ProductId = product.ProductId,
+                        Name = product.Name,
+                        Description = product.Description,
+                        Price = product.Price,
+                        CoverImageUrl = product.CoverImageUrl
+                    }).ToListAsync();
+            }
+
+            // Фільтрація товарів за ключовим словом з урахуванням регістру
+            var searchName = searchTerm.ToLower();
+
+            return await _context.Product
+                .Where(p => p.Name.ToLower().Contains(searchName) ||
+                            p.Description.ToLower().Contains(searchName))
+                .Select(product => new ProductModel
+                {
+                    ProductId = product.ProductId,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    CoverImageUrl = product.CoverImageUrl
+                }).ToListAsync();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Store.Repository
         Task<ProductModel> GetProductById(Guid productId);
         Task<List<ProductModel>> GetProductByCategoryId(Guid categoryId);
         Task<List<ProductModel>> GetTopProduct(int count);
-        List<ProductModel> SearchProduct(string name);
+        Task<List<ProductModel>> SearchProducts(string name);
+
     }
 }

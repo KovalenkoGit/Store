@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Store.Models;
+using Store.Service;
 using System.Diagnostics;
 
 namespace Store.Controllers
@@ -8,13 +9,21 @@ namespace Store.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IUserService _userService;
+
+        public HomeController(ILogger<HomeController> logger,
+                              IUserService userService)
         {
             _logger = logger;
+            _userService = userService;
         }
 
         public IActionResult Index()
         {
+            //Отримуємо ідентифікатор користувача
+            var userId = _userService.GetUserId();
+            //Отримуємо інформацію чи залогінений користувач
+            var isLoggedId = _userService.IsAuthenticated();
             return View();
         }
 

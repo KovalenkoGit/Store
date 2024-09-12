@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Store.Repository;
 using Store.Models;
+using Store.Helpers;
+using Store.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 //Реєстрація ApiDbContext з використанням PostgreSQL
@@ -13,6 +15,13 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApiDbContext>()
     .AddDefaultTokenProviders();
 
+builder.Services.ConfigureApplicationCookie(config =>
+{
+    config.LoginPath = builder.Configuration["Application:LoginPath"];
+});
+
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 #if DEBUG
@@ -21,6 +30,8 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
+builder.Services.AddScoped<IUserService, UserService>();
 //Параметри для паролів
 builder.Services.Configure<IdentityOptions>(option =>
 {
@@ -53,8 +64,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

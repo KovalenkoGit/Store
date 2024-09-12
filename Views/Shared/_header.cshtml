@@ -22,13 +22,23 @@
                             <a class="nav-link" asp-controller="Product" asp-action="GetAllProduct">Весь товар</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Product" asp-action="AddNewProduct">Додати товар</a>
+                            <a class="nav-link" href="#">Контакти</a>
                         </li>
+                       @*  Тільки для зареєстрованих користувачів *@
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                        <b>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Product" asp-action="AddNewProduct">Додати товар</a>
+                            </li>
+                        </b>
+
+                        }
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
+                    <form class="d-flex" role="search" asp-controller="Product" asp-action="SearchProduct" method="get">
+                        <input class="form-control me-2" type="search" name="nameProduct" placeholder="Пошук товару" aria-label="Search">
                         <button class="btn btn-outline-success me-2" type="submit">Пошук</button>
-                        <partial name="_loginInfo"/>
+                        <partial name="_loginInfo" />
                     </form>
 
                 </div>

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Store.Models.ProductModel>
+
+<div class="container">
+    <h1>Результати пошуку</h1>
+    <div class="row">
+        @if (!Model.Any())
+        {
+            <p>Товари не знайдено за запитом.</p>
+        }
+        else
+        {
+            @foreach (var product in Model)
+            {
+                <div class="col-md-3">
+                    <partial name="_productPresentation" model="@product" />
+                </div>
+            }
+        }
+    </div>
+</div>

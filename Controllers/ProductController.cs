@@ -40,11 +40,13 @@ namespace Store.Controllers
             var data = await _productRepository.GetProductByCategoryId(categoryId);
             return View(data);
         }
-        public List<ProductModel> SearchProduct(string name)
+        [HttpGet]
+        public async Task<IActionResult> SearchProduct(string nameProduct)
         {
-            return _productRepository.SearchProduct(name);
+            var products = await _productRepository.SearchProducts(nameProduct);
+            return View("SearchProduct", products);
         }
-        //[Authorize]
+        [Authorize]
         public async Task<ViewResult> AddNewProduct(bool isSuccess = false, Guid? productId = null)
         {
             var model = new ProductModel();
