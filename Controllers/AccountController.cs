@@ -47,16 +47,29 @@ namespace Store.Controllers
         }
         [Route("login")]
         [HttpPost]
-        public async Task<IActionResult> LogIn(LoginModel loginModel)
+        public async Task<IActionResult> LogIn(LoginModel loginModel, string returnUrl)
         {
             if (ModelState.IsValid)
             {
                 var result = await _accountRepository.PasswordSignInAsync(loginModel);
                 if (result.Succeeded)
                 {
+                    if (!string.IsNullOrEmpty(returnUrl))
+                    {
+                        return LocalRedirect(returnUrl);
+                    }
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError("", "Невірний email або пароль");
+
+                if (result.IsNotAllowed)
+                {
+                    ModelState.AddModelError("", "email не підтверджено");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Невірний email або пароль");
+                }
+                
             }
             return View();
         }
@@ -90,6 +103,22 @@ namespace Store.Controllers
                 }
             }
             return View(model);
+        }
+
+        [HttpGet("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail(string uid, string token)
+        {
+            if (!string.IsNullOrEmpty(uid) && !string.IsNullOrEmpty(token))
+            {
+                token = token.Replace(' ', '+');
+                var result = await _accountRepository.ConfirmEmailAsync(uid, token);
+                if (result.Succeeded)
+                {
+                    ViewBag.IsSuccess = true;
+                }
+            }
+
+            return View();
         }
     }
 }

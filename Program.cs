@@ -5,6 +5,9 @@ using Store.Repository;
 using Store.Models;
 using Store.Helpers;
 using Store.Service;
+using System.Configuration;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 //Реєстрація ApiDbContext з використанням PostgreSQL
@@ -32,6 +35,9 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.Configure<SMTPConfigModel>(builder.Configuration.GetSection("SMTPConfig"));
+
 //Параметри для паролів
 builder.Services.Configure<IdentityOptions>(option =>
 {
@@ -47,6 +53,8 @@ builder.Services.Configure<IdentityOptions>(option =>
     option.Password.RequireUppercase = false;
     // Не обов'язково, щоб пароль містив спеціальні символи (напр. !,@,#).
     option.Password.RequireNonAlphanumeric = false;
+    //Тільки підтверджені Email
+    option.SignIn.RequireConfirmedEmail = true;
 });
 
 var app = builder.Build();

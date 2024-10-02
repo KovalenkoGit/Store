@@ -9,5 +9,6 @@ namespace Store.Repository
         Task<SignInResult> PasswordSignInAsync(LoginModel loginModel);
         Task SignOutAsync();
         Task<IdentityResult> ChangePasswordAsync(ChangePasswordModel model);
+        Task<IdentityResult> ConfirmEmailAsync(string uid, string token);
     }
 }

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\GitHub\\Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +15,68 @@
       "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\emailtemplate\\emailconfirm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:emailtemplate\\emailconfirm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\service\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:service\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\views\\shared\\_logininfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:views\\shared\\_logininfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\emailtemplate\\testemail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:emailtemplate\\testemail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\smtpconfigmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\smtpconfigmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\useremailoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\useremailoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|d:\\github\\store\\models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70D4530-3704-4307-8604-0601FB7F7933}|Store.csproj|solutionrelative:models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,26 +98,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAiwHkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T21:34:06.52Z",
+              "WhenOpened": "2024-09-12T20:42:08.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T19:17:24.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "Service\\EmailService.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Service\\EmailService.cs",
+              "RelativeToolTip": "Service\\EmailService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwBYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:54:00.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GitHub\\Store\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\GitHub\\Store\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-15T10:29:15.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "D:\\GitHub\\Store\\Repository\\IAccountRepository.cs",
               "RelativeDocumentMoniker": "Repository\\IAccountRepository.cs",
               "ToolTip": "D:\\GitHub\\Store\\Repository\\IAccountRepository.cs",
               "RelativeToolTip": "Repository\\IAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T21:15:29.119Z",
               "EditorCaption": ""
@@ -90,14 +168,40 @@
               "RelativeDocumentMoniker": "Repository\\AccountRepository.cs",
               "ToolTip": "D:\\GitHub\\Store\\Repository\\AccountRepository.cs",
               "RelativeToolTip": "Repository\\AccountRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAiwC4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwEIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T21:02:49.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\GitHub\\Store\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T19:20:22.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfirmEmail.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Account\\ConfirmEmail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ConfirmEmail.cshtml",
+              "ToolTip": "D:\\GitHub\\Store\\Views\\Account\\ConfirmEmail.cshtml",
+              "RelativeToolTip": "Views\\Account\\ConfirmEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T18:43:07.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Account\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
@@ -110,46 +214,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAywFwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:42:08.525Z",
-              "EditorCaption": ""
+              "DocumentIndex": 9,
+              "Title": "EmailConfirm.html",
+              "DocumentMoniker": "D:\\GitHub\\Store\\EmailTemplate\\EmailConfirm.html",
+              "RelativeDocumentMoniker": "EmailTemplate\\EmailConfirm.html",
+              "ToolTip": "D:\\GitHub\\Store\\EmailTemplate\\EmailConfirm.html",
+              "RelativeToolTip": "EmailTemplate\\EmailConfirm.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-29T19:45:06.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChangePasswordModel.cs",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\ChangePasswordModel.cs",
-              "RelativeDocumentMoniker": "Models\\ChangePasswordModel.cs",
-              "ToolTip": "D:\\GitHub\\Store\\Models\\ChangePasswordModel.cs",
-              "RelativeToolTip": "Models\\ChangePasswordModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Service\\IEmailService.cs",
+              "RelativeDocumentMoniker": "Service\\IEmailService.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Service\\IEmailService.cs",
+              "RelativeToolTip": "Service\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:37:16.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T19:59:14.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
+              "Title": "SMTPConfigModel.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\SMTPConfigModel.cs",
+              "RelativeDocumentMoniker": "Models\\SMTPConfigModel.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Models\\SMTPConfigModel.cs",
+              "RelativeToolTip": "Models\\SMTPConfigModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:37:13.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_loginInfo.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Shared\\_loginInfo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_loginInfo.cshtml",
+              "ToolTip": "D:\\GitHub\\Store\\Views\\Shared\\_loginInfo.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_loginInfo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T19:36:46.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TestEmail.html",
+              "DocumentMoniker": "D:\\GitHub\\Store\\EmailTemplate\\TestEmail.html",
+              "RelativeDocumentMoniker": "EmailTemplate\\TestEmail.html",
+              "ToolTip": "D:\\GitHub\\Store\\EmailTemplate\\TestEmail.html",
+              "RelativeToolTip": "EmailTemplate\\TestEmail.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-16T19:28:20.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\GitHub\\Store\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\GitHub\\Store\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwBsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:10:57.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T20:10:57.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
+              "Title": "UserEmailOptions.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\UserEmailOptions.cs",
+              "RelativeDocumentMoniker": "Models\\UserEmailOptions.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Models\\UserEmailOptions.cs",
+              "RelativeToolTip": "Models\\UserEmailOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:41:47.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:34:06.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\GitHub\\Store\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "Service\\UserService.cs",
@@ -161,16 +322,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_loginInfo.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\Store\\Views\\Shared\\_loginInfo.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_loginInfo.cshtml",
-              "ToolTip": "D:\\GitHub\\Store\\Views\\Shared\\_loginInfo.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_loginInfo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-11T19:36:46.837Z",
-              "EditorCaption": ""
+              "DocumentIndex": 18,
+              "Title": "ChangePasswordModel.cs",
+              "DocumentMoniker": "D:\\GitHub\\Store\\Models\\ChangePasswordModel.cs",
+              "RelativeDocumentMoniker": "Models\\ChangePasswordModel.cs",
+              "ToolTip": "D:\\GitHub\\Store\\Models\\ChangePasswordModel.cs",
+              "RelativeToolTip": "Models\\ChangePasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:37:16.502Z"
             }
           ]
         }

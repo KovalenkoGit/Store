@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "ConfirmEmail";
+}
+
+<div class="container">
+     <div class="row text-center">
+         <div class="col-md-4">
+             @if (ViewBag.IsSuccess == true)
+            {
+                <div class="alert alert-success" role="alert">
+                    <p>Твій email верефіковано успішно</p>
+                </div>
+            }
+            else
+            {
+                <p>Щось не так з токеном</p>
+            }
+        </div>
+     </div>
+</div>
+

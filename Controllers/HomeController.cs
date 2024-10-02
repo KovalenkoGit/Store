@@ -10,16 +10,27 @@ namespace Store.Controllers
         private readonly ILogger<HomeController> _logger;
 
         private readonly IUserService _userService;
-
+        private readonly IEmailService _emailService;
         public HomeController(ILogger<HomeController> logger,
-                              IUserService userService)
+                              IUserService userService,
+                              IEmailService emailService)
         {
             _logger = logger;
             _userService = userService;
+            _emailService = emailService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            UserEmailOptions emailOptions = new UserEmailOptions() 
+            {
+                ToEmail = new List<string>() {"test@ukr.net"},
+                PlaceHolders = new List<KeyValuePair<string, string>>()
+                {
+                    new KeyValuePair<string, string>("{{UserName}}", "Johan")
+                }
+            };
+            _emailService.SendTestEmail(emailOptions);
             //Отримуємо ідентифікатор користувача
             var userId = _userService.GetUserId();
             //Отримуємо інформацію чи залогінений користувач
