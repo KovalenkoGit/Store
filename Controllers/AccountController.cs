@@ -35,7 +35,7 @@ namespace Store.Controllers
                     return View(user);
                 }
                 ModelState.Clear();
-                return View();
+                return RedirectToAction("ConfirmEmail", new {email = user.Email});
             }
             return View(user);
         }
@@ -106,19 +106,45 @@ namespace Store.Controllers
         }
 
         [HttpGet("confirm-email")]
-        public async Task<IActionResult> ConfirmEmail(string uid, string token)
+        public async Task<IActionResult> ConfirmEmail(string uid, string token, string email)
         {
+            EmailConfirmModel model = new EmailConfirmModel
+            {
+                Email = email
+            };
             if (!string.IsNullOrEmpty(uid) && !string.IsNullOrEmpty(token))
             {
                 token = token.Replace(' ', '+');
                 var result = await _accountRepository.ConfirmEmailAsync(uid, token);
                 if (result.Succeeded)
                 {
-                    ViewBag.IsSuccess = true;
+                   model.EmailVerifield = true;
                 }
             }
 
-            return View();
+            return View(model);
+        }
+
+        [HttpPost("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail(EmailConfirmModel model)
+        {
+            var user = await _accountRepository.GetUserByEmailAsync(model.Email);
+            if (user != null)
+            {
+                if (user.EmailConfirmed)
+                {
+                    model.EmailVerifield = true;
+                    return View(model);
+                }
+                await _accountRepository.GenerateEmailConfirmationTokenAsyn(user);
+                model.EmailSent = true;
+                ModelState.Clear();
+            }
+            else
+            {
+                ModelState.AddModelError("","Ой, щось не так");
+            }
+            return View(model);
         }
     }
 }

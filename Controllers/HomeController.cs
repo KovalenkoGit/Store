@@ -22,19 +22,19 @@ namespace Store.Controllers
 
         public async Task<IActionResult> Index()
         {
-            UserEmailOptions emailOptions = new UserEmailOptions() 
-            {
-                ToEmail = new List<string>() {"test@ukr.net"},
-                PlaceHolders = new List<KeyValuePair<string, string>>()
-                {
-                    new KeyValuePair<string, string>("{{UserName}}", "Johan")
-                }
-            };
-            _emailService.SendTestEmail(emailOptions);
+            //UserEmailOptions emailOptions = new UserEmailOptions() 
+            //{
+            //    ToEmail = new List<string>() {"test@ukr.net"},
+            //    PlaceHolders = new List<KeyValuePair<string, string>>()
+            //    {
+            //        new KeyValuePair<string, string>("{{UserName}}", "Johan")
+            //    }
+            //};
+            //_emailService.SendTestEmail(emailOptions);
             //Отримуємо ідентифікатор користувача
-            var userId = _userService.GetUserId();
+            //var userId = _userService.GetUserId();
             //Отримуємо інформацію чи залогінений користувач
-            var isLoggedId = _userService.IsAuthenticated();
+            //var isLoggedId = _userService.IsAuthenticated();
             return View();
         }
 

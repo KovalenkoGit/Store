@@ -1,12 +1,13 @@
-﻿
+﻿@model EmailConfirmModel
 @{
     ViewData["Title"] = "ConfirmEmail";
 }
 
 <div class="container">
      <div class="row text-center">
-         <div class="col-md-4">
-             @if (ViewBag.IsSuccess == true)
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+             @if (Model.EmailVerifield == true)
             {
                 <div class="alert alert-success" role="alert">
                     <p>Твій email верефіковано успішно</p>
@@ -14,7 +15,24 @@
             }
             else
             {
-                <p>Щось не так з токеном</p>
+                if (Model.EmailSent)
+                {
+                    <p> Відправлено лист на ваш Email.</p>
+                }
+                else
+                {
+                    <p>Надіслано лист на ваш email. Перейдіть за посиланням, щоб зареєструватися.</p>
+                }
+
+                <form asp-action="ConfirmEmail">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Email" />
+
+                    <p>Помилково видалили або не отримали</p>
+                    <div class="form-group">
+                        <input type="submit" value="Надіслати повторно" class="btn btn-primary" />
+                    </div>
+                </form>
             }
         </div>
      </div>
