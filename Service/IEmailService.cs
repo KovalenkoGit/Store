@@ -6,6 +6,7 @@ namespace Store.Service
     {
         string GetEmailBody(string templateName);
         Task SendTestEmail(UserEmailOptions userEmailOptions);
-        Task SendEmailFromEmailConfirmation(UserEmailOptions userEmailOptions);
+        Task SendEmailForEmailConfirmation(UserEmailOptions userEmailOptions);
+        Task SendEmailForForgotPassword(UserEmailOptions userEmailOptions);
     }
 }

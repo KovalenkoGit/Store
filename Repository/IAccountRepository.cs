@@ -12,5 +12,7 @@ namespace Store.Repository
         Task<IdentityResult> ChangePasswordAsync(ChangePasswordModel model);
         Task<IdentityResult> ConfirmEmailAsync(string uid, string token);
         Task GenerateEmailConfirmationTokenAsyn(ApplicationUser user);
+        Task GenerateForgotPasswordTokenAsyn(ApplicationUser user);
+        Task<IdentityResult> ResetPasswordAsync(ResetPasswordModel model);
     }
 }

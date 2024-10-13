@@ -20,10 +20,18 @@ namespace Store.Service
             await SendEmail(userEmailOptions);
 
         }
-        public async Task SendEmailFromEmailConfirmation(UserEmailOptions userEmailOptions)
+        public async Task SendEmailForEmailConfirmation(UserEmailOptions userEmailOptions)
         {
             userEmailOptions.Subject = UpdatePlaceHolders("Привіт {{UserName}}. Підтвердіть ваш email", userEmailOptions.PlaceHolders);
             userEmailOptions.Body = UpdatePlaceHolders(GetEmailBody("EmailConfirm"), userEmailOptions.PlaceHolders);
+            await SendEmail(userEmailOptions);
+
+        }
+
+        public async Task SendEmailForForgotPassword(UserEmailOptions userEmailOptions)
+        {
+            userEmailOptions.Subject = UpdatePlaceHolders("Привіт {{UserName}}. Відновіть ваш пароль", userEmailOptions.PlaceHolders);
+            userEmailOptions.Body = UpdatePlaceHolders(GetEmailBody("ForgotPassword"), userEmailOptions.PlaceHolders);
             await SendEmail(userEmailOptions);
 
         }

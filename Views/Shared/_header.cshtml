@@ -25,14 +25,17 @@
                             <a class="nav-link" href="#">Контакти</a>
                         </li>
                        @*  Тільки для зареєстрованих користувачів *@
-                        @if (User.Identity.IsAuthenticated)
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
                         {
                         <b>
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Product" asp-action="AddNewProduct">Додати товар</a>
                             </li>
                         </b>
-
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">Адмін</a>
+                        </li>
                         }
                     </ul>
                     <form class="d-flex" role="search" asp-controller="Product" asp-action="SearchProduct" method="get">

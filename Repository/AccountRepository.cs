@@ -8,24 +8,28 @@ namespace Store.Repository
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUserService _userService;
         private readonly IEmailService _emailService;
         private readonly IConfiguration _configuration;
 
         public AccountRepository(UserManager<ApplicationUser> userManager,
                                  SignInManager<ApplicationUser> signInManager,
+                                 RoleManager<IdentityRole> roleInManager,
                                  IUserService userService,
                                  IEmailService emailService,
                                  IConfiguration configuration)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleInManager;
             _userService = userService;
             _emailService = emailService;
             _configuration = configuration;
         }
         public async Task<ApplicationUser> GetUserByEmailAsync(string email)
         {
+
             return await _userManager.FindByEmailAsync(email);
         }
         public async Task<IdentityResult> CreateUser(UserRegistrationModel userModel)
@@ -53,9 +57,18 @@ namespace Store.Repository
                 await SendEmailConfirmationEmail(user, token);
             }
         }
+
+        public async Task GenerateForgotPasswordTokenAsyn(ApplicationUser user)
+        {
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            if (!string.IsNullOrEmpty(token))
+            {
+                await SendForgotPasswordEmail(user, token);
+            }
+        }
         public async Task<SignInResult> PasswordSignInAsync(LoginModel loginModel)
         {
-            return await _signInManager.PasswordSignInAsync(loginModel.Email, loginModel.Password, loginModel.RememberMe, false);
+            return await _signInManager.PasswordSignInAsync(loginModel.Email, loginModel.Password, loginModel.RememberMe, true);
 
         }
         public async Task SignOutAsync()
@@ -75,6 +88,12 @@ namespace Store.Repository
             return await _userManager.ConfirmEmailAsync(await _userManager.FindByIdAsync(uid), token);
         }
 
+        public async Task<IdentityResult> ResetPasswordAsync(ResetPasswordModel model)
+        {
+
+            return await _userManager.ResetPasswordAsync(await _userManager.FindByIdAsync(model.UserId), model.Token, model.NewPassword);
+        }
+
         private async Task SendEmailConfirmationEmail(ApplicationUser user, string token)
         {
             string appDomain = _configuration.GetSection("Application:AppDomain").Value;
@@ -89,8 +108,23 @@ namespace Store.Repository
                     new KeyValuePair<string, string>("{{Link}}", string.Format(appDomain+confirmationLink,user.Id, token))
                 }
             }; 
-            await _emailService.SendEmailFromEmailConfirmation(options);
+            await _emailService.SendEmailForEmailConfirmation(options);
         }
+        private async Task SendForgotPasswordEmail(ApplicationUser user, string token)
+        {
+            string appDomain = _configuration.GetSection("Application:AppDomain").Value;
+            string confirmationLink = _configuration.GetSection("Application:ForgotPassword").Value;
 
+            UserEmailOptions options = new UserEmailOptions
+            {
+                ToEmail = new List<string>() { user.Email },
+                PlaceHolders = new List<KeyValuePair<string, string>>()
+                {
+                    new KeyValuePair<string, string>("{{UserName}}", user.FirstName),
+                    new KeyValuePair<string, string>("{{Link}}", string.Format(appDomain+confirmationLink,user.Id, token))
+                }
+            };
+            await _emailService.SendEmailForForgotPassword(options);
+        }
     }
 }

@@ -23,8 +23,6 @@ builder.Services.ConfigureApplicationCookie(config =>
     config.LoginPath = builder.Configuration["Application:LoginPath"];
 });
 
-
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 #if DEBUG
@@ -55,6 +53,16 @@ builder.Services.Configure<IdentityOptions>(option =>
     option.Password.RequireNonAlphanumeric = false;
     //Тільки підтверджені Email
     option.SignIn.RequireConfirmedEmail = true;
+    //Тривалість блокування користувача
+    option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+    //Максимальна кількість спроб введення пароля
+    option.Lockout.MaxFailedAccessAttempts = 5;
+
+});
+// Токен дійсним протягом 5 хвилин. Після цього токен стає недійсним і більше не може бути використаний для виконання відповідної операції(ідтвердження електронної пошти чи скидання пароля)
+builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
+{
+    options.TokenLifespan = TimeSpan.FromMinutes(5);
 });
 
 var app = builder.Build();
@@ -75,8 +83,18 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Додаємо підтримку маршрутів для Areas
+app.UseEndpoints(endpoints =>
+{
 app.MapControllerRoute(
+
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    endpoints.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+});
 
 app.Run();

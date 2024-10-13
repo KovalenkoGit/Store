@@ -541,3 +541,5 @@ D:\GitHub\Store\obj\Debug\net8.0\Store.csproj.AssemblyReference.cache
 D:\GitHub\Store\obj\Debug\net8.0\Store.MvcApplicationPartsAssemblyInfo.cs
 D:\GitHub\Store\obj\Debug\net8.0\Store.csproj.Up2Date
 D:\GitHub\Store\obj\Debug\net8.0\Store.sourcelink.json
+D:\GitHub\Store\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\GitHub\Store\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
